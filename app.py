@@ -2,3 +2,5 @@ import streamlit as st
 
 st.title("Proyecto Final Integrador")
 
+Este proyecto presenta el desarrollo de una aplicación modular en Streamlit para explorar y analizar un dataset relacionado con Watch Market Dataset
+
