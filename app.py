@@ -17,7 +17,7 @@ st.title("⌚ Explorador de Mercado de Relojes con IA Local")
 st.sidebar.header("1. Carga de Datos")
 archivo_cargado = st.sidebar.file_uploader("Sube tu dataset (CSV)", type="csv")
 
-st.title("🎓 Sistema Inteligente de Análisis Local (Llama 3.2:3b)")
+st.sidebar.write("Modelo Ollama (Llama 3.2:3b)")
 st.markdown("---")
 
 
