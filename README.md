@@ -2,10 +2,8 @@
 Demo de Proyecto Final · Streamlit + Ollama + Scikit-learn
 Ejemplo básico para clase del módulo Paradigmas de Programación para Inteligencia Artificial y Análisis de Datos.
 Caso de demostración
-Se utiliza el dataset de regresión Diabetes incluido en Scikit-learn. El CSV se genera desde `sklearn.datasets.load_diabetes(scaled=False)` y se entrega dentro de `data/diabetes_sklearn.csv`, por lo que el demo puede ejecutarse sin descargar el dataset desde Internet.
-Documentación oficial del dataset:
-https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html
-> Este demo es exclusivamente académico. El dataset se utiliza para ilustrar análisis de datos y regresión; no debe interpretarse como una herramienta clínica o diagnóstica.
+Se utiliza el dataset Watch Market Dataset, Este conjunto de datos contiene información sobre 500+ marcas de relojes y más de 45.000 relojes ⌚. Incluye detalles como marca, modelo, precio y más. Ideal para cualquiera interesado en construir modelos de predicción de precios.
+
 Qué demuestra
 Carga de un CSV incluido o de un CSV propio.
 Perfil general y calidad de datos.
@@ -18,23 +16,20 @@ Contexto analítico resumido para evitar enviar todo el dataset al LLM.
 Explicación local de respaldo cuando Ollama no está disponible.
 Estructura
 ```text
-Demo_Proyecto_Final_Streamlit_Ollama_ScikitLearn/
-├── app.py
-├── create_demo_data.py
-├── requirements.txt
-├── README.md
-├── ARCHITECTURE.md
-├── START_HERE.txt
-├── run_app.bat
-├── run_app.command
-├── data/
-│   └── diabetes_sklearn.csv
-└── modules/
-    ├── __init__.py
-    ├── data.py
-    ├── analytics.py
-    ├── visualizations.py
-    └── agent.py
+Proyecto_Final_Streamlit_Ollama_ScikitLearn/
+📁 Proyecto_Final/
+├── 📄 app.py                  
+├── 📄 README.md               
+├── 📄 requirements.txt        
+├── 📄 .gitignore              
+├── 📁 data/
+│   └── 📄 watches_cleaned.csv 
+└── 📁 src/
+    ├── 📄 __init__.py         
+    ├── 📄 data.py             
+    ├── 📄 analytics.py        
+    ├── 📄 visualizations.py   
+    └── 📄 agent.py
 ```
 1. Crear entorno virtual
 Windows
