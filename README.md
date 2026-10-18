@@ -32,6 +32,7 @@ Proyecto_Final_Streamlit_Ollama_ScikitLearn/
     └── 📄 agent.py
 
 
+
 ## 5. Crear entorno virtual
 
 ### Windows
@@ -48,14 +49,14 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-## 2. Instalar dependencias
+## Instalar dependencias
 
 ```bash
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-## 3. Ollama
+## Ollama
 
 Instalar Ollama desde su sitio oficial y, con el servicio activo, descargar un modelo ligero:
 
@@ -69,7 +70,7 @@ En equipos con recursos limitados puede usarse:
 ollama pull llama3.2:1b
 ```
 
-## 4. Ejecutar
+## Ejecutar
 
 ```bash
 python -m streamlit run app.py
