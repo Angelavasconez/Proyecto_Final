@@ -1,9 +1,13 @@
 import streamlit as st
 import pandas as pd
-import data
-import analytics
-import visualizations
-import agent
+
+# Importar desde el paquete src
+from src import data
+from src import analytics
+from src import visualizations
+from src import agent
+
+
 
 # Configuración inicial de la página
 st.set_page_config(
