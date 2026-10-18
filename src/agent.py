@@ -1,4 +1,3 @@
-%%writefile src/agent.py
 import ollama
 
 class AgenteDatos:
