@@ -17,7 +17,7 @@ st.set_page_config(
 st.title("⌚ Explorador del Mercado de Relojes con IA")
 st.markdown("Plataforma interactiva para análisis exploratorio, modelado predictivo e interpretación asistida por Inteligencia Artificial.")
 
-st.write("Elaborado por: Angela Vásconez V.")
+st.write("Elaborado por: Angela Vásconez ")
 st.sidebar.image("UCG.jpeg")
 
 # -----------------------------------------------------------------------------
