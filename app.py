@@ -17,16 +17,7 @@ st.title("⌚ Explorador de Mercado de Relojes con IA Local")
 st.sidebar.header("1. Carga de Datos")
 archivo_cargado = st.sidebar.file_uploader("Sube tu dataset (CSV)", type="csv")
 
-if archivo_cargado is not None:
-    # Guardar temporalmente
-    with open("data/watches (cleaned).csv", "wb") as f:
-        f.write(archivo_cargado.getbuffer())
-    
-    gestor = GestorDataset("data/watches (cleaned).csv")
-    df = gestor.cargar_datos()
-    st.success(f"Dataset cargado: {df.shape[0]} filas y {df.shape[1]} columnas.")
-
-    # Creación de Pestañas
+# Creación de Pestañas
     tab_eda, tab_vis, tab_ml, tab_ia = st.tabs(["Exploración", "Visualizaciones", "Regresión Predictiva", "Asistente IA"])
 
     with tab_eda:
