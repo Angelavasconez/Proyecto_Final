@@ -23,16 +23,6 @@ st.markdown("---")
 
 from src.data_loader import cargar_datos
 
-ruta_dataset = None
-
-if archivo is not None:
-    os.makedirs("data/watches(cleaned).csv", exist_ok=True)
-    ruta_dataset = os.path.join("data/watches(cleaned).csv", archivo.name)
-    with open(ruta_dataset, "wb") as f:
-        f.write(archivo.getbuffer())
-elif os.path.exists("data/watches(cleaned).csv"):
-    ruta_dataset = "data/watches(cleaned).csv"
-    st.sidebar.info("Utilizando dataset por defecto.")
 
 
 
