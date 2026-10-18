@@ -15,14 +15,7 @@ st.set_page_config(
   layout="wide"
 )
 
-Capa de presentación en Streamlit para el Watch Market Dataset.
-"""
-
-import streamlit as st
-import pandas as pd
-import numpy as np
-import os
-
+#Capa de presentación en Streamlit para el Watch Market Dataset.
 # Importaciones de la arquitectura modular (carpeta src/)
 from src.data import perfil_calidad_datos
 from src.analytics import (
