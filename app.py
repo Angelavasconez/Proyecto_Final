@@ -27,6 +27,6 @@ try:
   from scr.agent import AgenteDatos
 except ImportError as e:
   st.error(f" X Error en la estructura de los archivos dentro de 'src/': {e}")
-  st.stop
+  st.stop()
 
 
