@@ -20,6 +20,15 @@ st.markdown("Plataforma interactiva para análisis exploratorio, modelado predic
 st.write("Elaborado por: Angela Vásconez V.")
 st.sidebar.image("UCG.jpeg")
 
+# Perfilado inicial del dataset
+profile = data.dataset_profile(df)
+st.markdown("### 📊 Resumen del Dataset")
+st.write(f"**Registros:** {profile['rows']}")
+st.write(f"**Variables:** {profile['columns']}")
+st.write(f"**Valores Nulos:** {profile['missing']}")
+st.write(f"**Duplicados:** {profile['duplicates']}")
+st.write(f"**Variables Numéricas:** {profile['numeric_columns']}")
+
 # -----------------------------------------------------------------------------
 # 1. CARGA DE DATOS
 # -----------------------------------------------------------------------------
@@ -41,15 +50,6 @@ df = load_data(uploaded_file)
 
 if df is None:
     st.stop()
-
-# Perfilado inicial del dataset
-profile = data.dataset_profile(df)
-st.sidebar.markdown("### 📊 Resumen del Dataset")
-st.sidebar.write(f"**Filas:** {profile['rows']}")
-st.sidebar.write(f"**Columnas:** {profile['columns']}")
-st.sidebar.write(f"**Valores Nulos:** {profile['missing']}")
-st.sidebar.write(f"**Duplicados:** {profile['duplicates']}")
-st.sidebar.write(f"**Variables Numéricas:** {profile['numeric_columns']}")
 
 # -----------------------------------------------------------------------------
 # ESTRUCTURA EN PESTAÑAS
