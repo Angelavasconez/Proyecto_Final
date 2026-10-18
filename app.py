@@ -20,7 +20,7 @@ archivo_cargado = st.sidebar.file_uploader("Sube tu dataset (CSV)", type="csv")
 # Intentar importar los módulos de tu carpeta src/ de forma segura
 try:
     from src.data_loader import cargar_datos
-    from src.eda import obtener_resumen_estadistico
+    from src.eda import perfil_calidad_datos
     from src.visualizations import generar_grafico_distribucion
     from src.agent import agente_analista
 except ImportError as e:
