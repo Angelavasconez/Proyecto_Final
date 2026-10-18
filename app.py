@@ -17,6 +17,8 @@ st.set_page_config(
 st.title("⌚ Explorador del Mercado de Relojes con IA")
 st.markdown("Plataforma interactiva para análisis exploratorio, modelado predictivo e interpretación asistida por Inteligencia Artificial.")
 
+st.sidebar.image("UCG.jpeg")
+
 # -----------------------------------------------------------------------------
 # 1. CARGA DE DATOS
 # -----------------------------------------------------------------------------
