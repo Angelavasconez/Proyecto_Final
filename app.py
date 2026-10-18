@@ -1,4 +1,10 @@
 import streamlit as st
+from src.data_loader import GestorDataset
+from src.eda import perfil_calidad_datos, AnalizadorNumerico, AnalizadorCategorico
+from src.visualizations import graficar_distribucion, graficar_dispersion
+from src.patterns import FlujoRegresionFacade
+from src.agent import AgenteDatos
+import os
 
 st.title("Proyecto Final Integrador")
 
@@ -19,6 +25,8 @@ archivo_cargado = st.sidebar.file_uploader("Sube tu dataset (CSV)", type="csv")
 
 st.sidebar.write("Modelo Ollama (Llama 3.2:3b)")
 st.markdown("---")
+
+
 
 
 
