@@ -1,4 +1,3 @@
-%%writefile src/visualizations.py
 import plotly.express as px
 
 def graficar_distribucion(df, columna):
