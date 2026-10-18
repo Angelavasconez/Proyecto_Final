@@ -1,15 +1,4 @@
 import streamlit as st
-
-st.title("Proyecto Final Integrador")
-
-st.write("Este proyecto presenta el desarrollo de una aplicación modular en Streamlit para explorar y analizar un dataset relacionado con Watch Market Dataset")
-st.write("Elaborado por: Angela Vásconez")
-
-st.sidebar.image("UCG.jpeg")
-
-st.sidebar.title("Configuración")
-
-
 import pandas as pd
 from src.data_loader import GestorDataset
 from src.eda import perfil_calidad_datos, AnalizadorNumerico, AnalizadorCategorico
