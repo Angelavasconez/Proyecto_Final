@@ -22,9 +22,9 @@ st.markdown("---")
 
 try:
   from src.data_loader import cargar_datos
-  from scr.eda import perfil_calidad_datos
-  from scr.visualizations import graficar_distribucion
-  from scr.agent import AgenteDatos
+  from src.eda import perfil_calidad_datos
+  from src.visualizations import graficar_distribucion
+  from src.agent import AgenteDatos
 except ImportError as e:
   st.error(f" X Error en la estructura de los archivos dentro de 'src/': {e}")
   st.stop()
