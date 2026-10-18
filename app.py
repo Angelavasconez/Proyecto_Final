@@ -22,7 +22,7 @@ try:
     from src.data_loader import cargar_datos
     from src.eda import perfil_calidad_datos
     from src.visualizations import graficar_distribucion
-    from src.agent import agente_analista
+    from src.agent import AgenteDatos
 except ImportError as e:
     st.error(f"❌ Error en la estructura de archivos dentro de 'src/': {e}")
     st.stop()
