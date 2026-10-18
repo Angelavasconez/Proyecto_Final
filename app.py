@@ -30,8 +30,8 @@ if archivo is not None:
     ruta_dataset = os.path.join("data", archivo.name)
     with open(ruta_dataset, "wb") as f:
         f.write(archivo.getbuffer())
-elif os.path.exists("data/watches (cleaned).csv"):
-    ruta_dataset = "data/watches (cleaned).csv"
+elif os.path.exists("data/watches(cleaned).csv"):
+    ruta_dataset = "data/watches(cleaned).csv"
     st.sidebar.info("Utilizando dataset por defecto.")
 
 
