@@ -1,4 +1,3 @@
-%%writefile src/eda.py
 import pandas as pd
 import numpy as np
 from abc import ABC, abstractmethod
