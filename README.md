@@ -33,9 +33,10 @@ Proyecto_Final_Streamlit_Ollama_ScikitLearn/
 
 
 
-## 5. Crear entorno virtual
+### 5. Crear entorno virtual
 
-### Windows
+## 4. Crear entorno virtual
+ Windows
 
 ```bash
 python -m venv .venv
