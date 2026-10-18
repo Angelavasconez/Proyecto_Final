@@ -7,8 +7,6 @@ from src import analytics
 from src import visualizations
 from src import agent
 
-
-
 # Configuración inicial de la página
 st.set_page_config(
     page_title="Analítica de Relojes con IA Local",
