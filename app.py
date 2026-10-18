@@ -20,15 +20,6 @@ st.markdown("Plataforma interactiva para análisis exploratorio, modelado predic
 st.write("Elaborado por: Angela Vásconez V.")
 st.sidebar.image("UCG.jpeg")
 
-# Perfilado inicial del dataset
-profile = data.dataset_profile(df)
-st.markdown("### 📊 Resumen del Dataset")
-st.write(f"**Registros:** {profile['rows']}")
-st.write(f"**Variables:** {profile['columns']}")
-st.write(f"**Valores Nulos:** {profile['missing']}")
-st.write(f"**Duplicados:** {profile['duplicates']}")
-st.write(f"**Variables Numéricas:** {profile['numeric_columns']}")
-
 # -----------------------------------------------------------------------------
 # 1. CARGA DE DATOS
 # -----------------------------------------------------------------------------
