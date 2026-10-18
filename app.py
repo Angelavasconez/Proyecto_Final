@@ -22,7 +22,7 @@ st.sidebar.write("Modelo Ollama (Llama 3.2:3b)")
 st.markdown("---")
 
 from src.data_loader import cargar_datos
-from src.eda import perfil_calidad_datos, AnalizadorNumerico, AnalizadorCategorico
+from src.eda import perfil_calidad_datos
 from src.visualizations import graficar_distribucion, graficar_dispersion
 from src.patterns import FlujoRegresionFacade
 from src.agent import AgenteDatos
