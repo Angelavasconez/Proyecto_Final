@@ -19,10 +19,10 @@ archivo_cargado = st.sidebar.file_uploader("Sube tu dataset (CSV)", type="csv")
 
 if archivo_cargado is not None:
     # Guardar temporalmente
-    with open("data/temp_dataset.csv", "wb") as f:
+    with open("data/watches (cleaned).csv", "wb") as f:
         f.write(archivo_cargado.getbuffer())
     
-    gestor = GestorDataset("data/temp_dataset.csv")
+    gestor = GestorDataset("data/watches (cleaned).csv")
     df = gestor.cargar_datos()
     st.success(f"Dataset cargado: {df.shape[0]} filas y {df.shape[1]} columnas.")
 
