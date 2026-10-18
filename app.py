@@ -21,7 +21,7 @@ archivo_cargado = st.sidebar.file_uploader("Sube tu dataset (CSV)", type="csv")
 try:
     from src.data_loader import cargar_datos
     from src.eda import perfil_calidad_datos
-    from src.visualizations import generar_grafico_distribucion
+    from src.visualizations import graficar_distribucion
     from src.agent import agente_analista
 except ImportError as e:
     st.error(f"❌ Error en la estructura de archivos dentro de 'src/': {e}")
