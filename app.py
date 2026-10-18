@@ -17,3 +17,17 @@ st.title("⌚ Explorador de Mercado de Relojes con IA Local")
 st.sidebar.header("1. Carga de Datos")
 archivo_cargado = st.sidebar.file_uploader("Sube tu dataset (CSV)", type="csv")
 
+# Intentar importar los módulos de tu carpeta src/ de forma segura
+try:
+    from src.data_loader import cargar_datos
+    from src.eda import obtener_resumen_estadistico
+    from src.visualizations import generar_grafico_distribucion
+    from src.agent import agente_analista
+except ImportError as e:
+    st.error(f"❌ Error en la estructura de archivos dentro de 'src/': {e}")
+    st.stop()
+
+st.title("🎓 Sistema Inteligente de Análisis Local (Llama 3.2:3b)")
+st.markdown("---")
+
+
