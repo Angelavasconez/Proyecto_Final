@@ -12,7 +12,7 @@ st.sidebar.title("Configuración")
 st.set_page_config(
   page_title="Proyecto Final - Agente Local",
   page_icon="🎓", 
-  layout="wide
+  layout="wide"
 )
 
 
