@@ -45,12 +45,12 @@ if df is None:
 
 # Perfilado inicial del dataset
 profile = data.dataset_profile(df)
-st.markdown("### 📊 Resumen del Dataset")
-st.write(f"**Registros:** {profile['rows']}")
-st.write(f"**Variables:** {profile['columns']}")
-st.write(f"**Valores Nulos:** {profile['missing']}")
-st.write(f"**Duplicados:** {profile['duplicates']}")
-st.write(f"**Variables Numéricas:** {profile['numeric_columns']}")
+st.sidebar.markdown("### 📊 Resumen del Dataset")
+st.sidebar.write(f"**Registros:** {profile['rows']}")
+st.sidebar.write(f"**Variables:** {profile['columns']}")
+st.sidebar.write(f"**Valores Nulos:** {profile['missing']}")
+st.sidebar.write(f"**Duplicados:** {profile['duplicates']}")
+st.sidebar.write(f"**Variables Numéricas:** {profile['numeric_columns']}")
 
 # -----------------------------------------------------------------------------
 # ESTRUCTURA EN PESTAÑAS
