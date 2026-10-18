@@ -29,4 +29,14 @@ except ImportError as e:
   st.error(f" X Error en la estructura de los archivos dentro de 'src/': {e}")
   st.stop()
 
+try:
+  df = cargar_datos()
+  st.sidebar.success("Dataset muy bien cargado")
+except FileNotFoundError as err:
+    st.error("⚠️ **Control de Entorno (Dataset Ausente):**")
+    st.info(str(err))
+    st.stop()
+
+
+
 
