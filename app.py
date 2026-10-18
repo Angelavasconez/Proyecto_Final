@@ -9,8 +9,6 @@ st.sidebar.image("UCG.jpeg")
 
 st.sidebar.title("Configuración")
 
-%%writefile app.py
-import streamlit as st
 import pandas as pd
 from src.data_loader import GestorDataset
 from src.eda import perfil_calidad_datos, AnalizadorNumerico, AnalizadorCategorico
