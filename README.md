@@ -32,10 +32,8 @@ Proyecto_Final_Streamlit_Ollama_ScikitLearn/
     └── 📄 agent.py
 
 
-
 ### 5. Crear entorno virtual
 
-## 4. Crear entorno virtual
  Windows
 
 ```bash
