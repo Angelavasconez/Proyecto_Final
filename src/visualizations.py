@@ -1,12 +1,11 @@
-import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-def graficar_distribucion(df, columna):
-    if pd.api.types.is_numeric_dtype(df[columna]):
-        return px.histogram(df, x=columna, title=f"Distribución de {columna}", marginal="box")
-    else:
-        conteo = df[columna].value_counts().reset_index()
-        conteo.columns = [columna, 'Frecuencia']
-        return px.bar(conteo, x=columna, y='Frecuencia', title=f"Frecuencias de {columna}")
 
-def graficar_dispersion(df, x, y):
-    return px.scatter(df, x=x, y=y, title=f"{y} vs {x}", opacity=0.6)
+def generar_grafico_distribucion(df, columna_numerica):
+    """Genera un gráfico estadístico seguro de distribución."""
+    fig, ax = plt.subplots(figsize=(8, 4))
+    if columna_numerica in df.columns:
+        sns.histplot(df[columna_numerica], kde=True, ax=ax, color="#1f77b4")
+        ax.set_title(f"Distribución de {columna_numerica}")
+    return fig
